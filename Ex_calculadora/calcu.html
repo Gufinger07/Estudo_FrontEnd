@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section>
+        <div>
+            Valor 1: <input type="number" name="txtnum1" id="txtnum1"><br>
+            Valor 2: <input type="number" name="txtnum2" id="txtnum2"><br>
+            Escolha a operação: <input type="button" value="Somar" onclick="somar()">
+            <input type="button" value="Subtrair" onclick="subtrair()">
+            <input type="button" value="Multiplicar" onclick="multiplicar()">
+            <input type="button" value="Dividir" onclick="dividir()">
+        </div> 
+        <div id="res">
+
+        </div>
+        
+
+    </section>
+    <footer>
+        <p>&copy; Gustavo Finger</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

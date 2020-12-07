@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_EX5</title>
+    <style>
+        h1 {
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Consultar Curso</h1>
+
+<form name="formcurso" method="post">
+    <input type="text" name="f_cursodig" size="8" maxlength="4"> (SIST) <p></p>
+    <input type="button" name="Confirmar" value="Confirmar" onclick="Curso()">
+    <input type="reset" value="Cancelar" name="Cancelar"><p></p>
+    <input type="text" value="Codigo do curso" name="cod_curso">
+
+</form>
+<script>
+    function Curso() {
+        var cod1 = document.formcurso.f_cursodig.value
+        if (cod1.toUpperCase() === 'SIST'){
+            document.formcurso.cod_curso.value = 'SIST001/FB'
+        } else {
+            window.alert('Curso Invalido')
+        }
+    }
+</script>
+
+</body>
+</html>

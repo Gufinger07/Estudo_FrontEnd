@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_EX2</title>
+    <style>
+        h1 {
+        color: darkturquoise;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Soma de dois valores</h1>
+
+    <form action="" name="numeros" method="post">
+        <label for="valor1">
+            <input type="number" value="valor1" name="valor1" id="valor1">
+        </label>
+
+        <label for="valor2">
+            <input type="number" value="valor2" name="valor2" id="valor2">
+        </label>
+        <input type="button" value="Somar" onclick="Somar()">
+        <input type="reset" value="Zerar dados">
+    </form>
+
+<script>
+    function Somar() {
+        var valor1 = parseInt(document.numeros.valor1.value)
+        var valor2 = parseInt(document.numeros.valor2.value)
+        window.alert('A soma dos numeros é: ' + String(valor1 + valor2))
+    }
+</script>
+</body>
+</html>

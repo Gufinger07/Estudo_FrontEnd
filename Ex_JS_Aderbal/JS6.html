@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_EX6</title>
+    <style>
+        h1 {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+<h1>Concatenação de Dados</h1>
+
+<form name="Concatena" action="" method="post">
+    <label id="Nome">
+        <input name="Nome" type="text" placeholder="Digite seu Nome">
+    </label>
+    <label id="Sobrenome">
+        <input name="Sobrenome" type="text" placeholder="Digite seu sobrenome">
+    </label>
+
+    <input type="button" value="Concatenar" name="concatenar" onclick="concatena()">
+    <input type="reset" name="Cancelar">
+
+</form>
+<script>
+    function concatena() {
+        let nome = document.Concatena.Nome.value;
+        let sobrenome = document.Concatena.Sobrenome.value;
+        let nome_completo = nome + ' ' + sobrenome;
+        window.alert(nome_completo)
+    }
+</script>
+</body>
+</html>
