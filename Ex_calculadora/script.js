@@ -1,6 +1,7 @@
 var num1 = document.getElementById("txtnum1")
 var num2 = document.getElementById("txtnum2")
 var res = document.getElementById("res")
+var teste = 0
 function somar() {
     if (num1.value && num2.value != 0) {
         var n1 = Number(num1.value)
